@@ -1,4 +1,9 @@
-spring.datasource:
-  url: jdbc:mysql://localhost:3306/example
-  username: some_user
-  password: some_password
+tenants.datasource:
+    url: jdbc:mysql://localhost:3306
+    username: some_user
+    password: some_password
+    schema-selection-query: use {}
+
+spring.jpa.open-in-view: false
+flyway.enabled: false
+logging.level.com.billkoch: debug
