@@ -33,7 +33,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
     compile('com.google.guava:guava:19.0')
     compile('org.projectlombok:lombok:1.16.10')
-    runtime('org.flywaydb:flyway-core:4.0.3')
+    compile('org.flywaydb:flyway-core:4.0.3')
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

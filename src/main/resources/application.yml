@@ -1,9 +1,16 @@
 tenants.datasource:
-    url: jdbc:mysql://localhost:3306
-    username: some_user
-    password: some_password
-    schema-selection-query: use {}
+  url: jdbc:mysql://localhost:3306
+  username: some_user
+  password: some_password
+  schema-selection-query: use {}
+
+admin.datasource:
+  url: jdbc:mysql://localhost:3306/admin
+  username: root
+  password: root
+  schema-selection-query: use {}
+
+flyway.locations: classpath:admin/db/migration
 
 spring.jpa.open-in-view: false
-flyway.enabled: false
 logging.level.com.billkoch: debug

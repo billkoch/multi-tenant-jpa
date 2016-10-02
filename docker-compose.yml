@@ -6,6 +6,6 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=example
+      - MYSQL_DATABASE=admin
       - MYSQL_USER=some_user
       - MYSQL_PASSWORD=some_password
